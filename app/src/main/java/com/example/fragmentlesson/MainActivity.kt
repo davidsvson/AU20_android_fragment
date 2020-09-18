@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun addYellowFragment(view: View) {
-        val yellowFragment = YellowFragment()
+        val yellowFragment = YellowFragment.newInstance("Hej", "Hej") //YellowFragment()
         val transaction = supportFragmentManager.beginTransaction()
         transaction.add(R.id.container, yellowFragment, "yellowFragment" )
         transaction.commit()
