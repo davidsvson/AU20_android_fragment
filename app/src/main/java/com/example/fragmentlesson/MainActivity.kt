@@ -67,6 +67,13 @@ class MainActivity : AppCompatActivity() {
     }
 
 
+    fun changeText(view: View) {
+        val fragment = supportFragmentManager.findFragmentByTag("pinkFragment") as PinkFragment?
+
+        fragment?.setText("David")
+    }
+
+
 
 
 }
